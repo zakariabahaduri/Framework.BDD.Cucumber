@@ -1,4 +1,5 @@
 Feature: The header title should match the expected
+  @smoke
   Scenario: As user opens the Tek Insurance App it should match the exact word
   ##  Given  User has opened the the website
     When  User inputs username "supervisor" and password "tek_supervisor"
