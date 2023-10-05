@@ -1,7 +1,7 @@
 
 Feature: Logging in successfully
+  @smoke
   Scenario: users uses correct username and password
-
     When : The web Page is displayed. The title should be "Tek Insurance Service"
     When : user enters username "supervisor"
     And :  user enters Password1 "tek_supervisor"
@@ -11,7 +11,7 @@ Feature: Logging in successfully
     And : User should be able to identify accounts "Accounts"
     And : User should be able to identify plans "Plans"
 
-    @US_7
+    @US_7,smoke
     Scenario Outline: User uses wrong username and password
       When : user enters username "<username>"
       And :  user enters Password1 "<Password1>"
