@@ -12,6 +12,7 @@ tags = "@smoke" ,
 plugin ={
 "pretty",
  "html:target/htmlReports/cucumbers-pretty.html",
+        "json:target/jsonReports/report.json"
 }
 )
 public class Runner {
