@@ -1,6 +1,6 @@
 Feature: Validate Accounts Table
 
-  @US_9, @smoke
+  @US_9
   Scenario: Validate account table rows
     Given : Login with username "supervisor" and password "tek_supervisor"
     When : wait for 2 Second
@@ -8,7 +8,7 @@ Feature: Validate Accounts Table
     When : wait for 60 Second
     Then : Validate table has 10 rows
 
-  @US_10
+  @US_10, @smoke
   Scenario Outline: Validate Change Item per page
     Given : Login with username "supervisor" and password "tek_supervisor"
     When : wait for 2 Second
